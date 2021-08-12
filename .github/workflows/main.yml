@@ -20,6 +20,7 @@ jobs:
           meson build -Dstatic_executable=true
           cd build
           ninja
+          ls -lRa
       - name: Test Hades
         run: |
           meson build.test -Denable_debugger=true -Denable_sdl2=false
